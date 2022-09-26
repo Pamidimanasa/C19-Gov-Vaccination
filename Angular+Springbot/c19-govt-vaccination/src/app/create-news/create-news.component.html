@@ -1,0 +1,21 @@
+<div class="col-md-6 offset-md-3">
+<h3>Add news</h3>
+<form (ngSubmit) = "onSubmit()">
+<div class="form-group">
+        <label>id</label>
+        <input type="text" class = "form-control" id = "id"
+            [(ngModel)] = "news.newsId" name="id">       
+ </div>   
+
+<div class="form-group">
+            <label>description</label>
+            <input type="text" class = "form-control" id = "description"
+                [(ngModel)] = "news.newsId" name="description">       
+ </div>      
+<div class="form-group">
+    <label>newsdescdate</label>
+    <input type="text" class="form-control"id = "newsdescdate">
+</div>
+   <button class = "btn btn-success" type = "submit">Submit</button>  
+    </form>
+</div>

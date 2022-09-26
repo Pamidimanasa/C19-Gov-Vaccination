@@ -1,0 +1,26 @@
+<h2> News List</h2>
+<table class = "table table-striped">
+   <thead>
+    <tr>
+        <th>Description</th>
+        <th>News Date</th>
+    </tr>
+   </thead>
+    <tbody>
+        <tr *ngFor = "let News of news" >
+            <td> {{News.description}}</td>
+            <td> {{News.newsdescDate}}</td>
+            
+        <td>
+              <button (click) = "updateNews(News.newsId)" class = "btn btn-info"> Update</button>
+              <button (click) = "deleteNews(News.newsId)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+    
+        
+        
+            
+
